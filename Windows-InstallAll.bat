@@ -9,6 +9,10 @@ ECHO ===========================================================================
     ECHO Debloating Windows with Chris Titus' script...
     powershell -NoProfile -ExecutionPolicy Bypass -Command "iwr -useb https://christitus.com/win | iex"
 
+    ECHO Importing energy plan...
+    powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
+    
+
     ECHO Complete. 
     ECHO Remember to reboot if needed
     ECHO Monitor Task Manager Processes to ensure installations complete
